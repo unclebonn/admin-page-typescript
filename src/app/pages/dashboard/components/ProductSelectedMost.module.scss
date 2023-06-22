@@ -1,0 +1,27 @@
+.chart {
+    position: absolute;
+    left: 27vw;
+    top: 14vh;
+    width: 1000px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: inline-flex;
+    border: 1px solid black;
+    white-space: nowrap;
+
+    .bar {
+        display: inline-block;
+        transform: translateX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    &:hover .bar {
+        transform: translateX(-10px); 
+    }
+}
+
+.title{
+    position: absolute;
+    left: 50%;
+    top: 3vh;
+}

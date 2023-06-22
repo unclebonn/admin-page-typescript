@@ -1,0 +1,84 @@
+.table {
+    position: absolute;
+    left: 24vw;
+    top: 10vh;
+    width: 72vw;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px ridge black;
+
+    table {
+        width: 100%;
+        text-align: center;
+    }
+
+    h3 {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.findProduct {
+    position: absolute;
+    right: 3vw;
+    top: 5vh;
+}
+
+.popupUpdateProduct {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: 3;
+
+
+
+    .updateInformation {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 70px 200px;
+        border-radius: 8px;
+        width: 200px;
+
+        div {
+            margin: 10px 0px;
+
+            label {
+                display: block;
+            }
+
+            input {
+                width: calc(100% - 20px - 3.2px);
+                padding: 10px;
+                border: 1px ridge black;
+            }
+
+            button {
+                padding: 5px 25px;
+            }
+        }
+
+        div:last-child {
+            margin: 10px 0px 0px 0px;
+            text-align: center;
+        }
+
+        .removeIcon {
+            position: absolute;
+            top: 3vh;
+            right: 2vw;
+            padding: 10px;
+            cursor: pointer;
+            .icon{
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Appbar from './app/appLayout/appbar/Appbar';
 
-function App() {
+import Product from './app/pages/product/components/Product';
+import Order from './app/pages/order/components/Order';
+import OrderDetail from './app/pages/orderdetail/components/OrderDetail';
+import AddProduct from './app/pages/orderdetail/components/AddProduct';
+import Dashboard from './app/pages/dashboard/components/Dashboard';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path='/product' element={<Product />} />
+        <Route path='/order' element={<Order />} />
+        {/* <Route path='/orderdetail' element={<OrderDetail />} /> */}
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/order/addproduct' element={<AddProduct />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
 export default App;

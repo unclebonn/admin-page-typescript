@@ -1,0 +1,69 @@
+.listOfProduct {
+    position: absolute;
+    width: auto;
+    height: 75vh;
+    top: 13vh;
+    left: 17vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px ridge black;
+}
+
+.title {
+    position: absolute;
+    left: 17vw;
+    top: 3vh;
+}
+
+.popupAddProduct {
+    position: absolute;
+    right: 13vw;
+    top: 13vh;
+
+    .orderId {
+        position: absolute;
+        top: -10vh;
+    }
+
+    .updateInformation {
+
+        width: auto;
+        height: 75vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: 1px ridge black;
+
+
+        table {
+            text-align: center;
+
+            tbody {
+                td {
+                    input {
+                        border: none;
+                        width: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.removeIcon {
+    position: absolute;
+    right: 2vw;
+    top: 3vh;
+
+    h2 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .link{
+        text-decoration: none;
+        color: black;
+    }
+}

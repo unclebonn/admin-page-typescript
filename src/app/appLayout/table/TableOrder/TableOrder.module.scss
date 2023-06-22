@@ -1,0 +1,104 @@
+.table {
+    position: absolute;
+    left: 18.5vw;
+    // top: 10%;
+    width: 80vw;
+    height: calc(90vh - 52px - 21.200px - 1.2px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px ridge black;
+
+    table {
+        width: 100%;
+        text-align: center;
+    }
+
+    h3 {
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+
+.findProduct {
+    text-align: right;
+    padding: 29px 26px;
+}
+
+
+//=================================
+
+.popupUpdateProduct {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: 3;
+
+
+
+    .updateInformation {
+        position: absolute;
+        left: 50vw;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 70px 200px;
+        border-radius: 8px;
+        width: 430px;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .removeIcon {
+            position: absolute;
+            right: 2vw;
+            top: 3vh;
+            width: unset;
+            padding: 10px;
+            cursor: pointer;
+            .icon{
+                font-size: 20px;
+            }
+        }
+
+        div {
+            margin: 10px 10px;
+            width: calc(50% - 20px);
+
+            label {
+                display: block;
+            }
+
+            input {
+                width: calc(100% - 20px - 3.2px);
+                padding: 10px;
+            }
+
+            button {
+                padding: 5px 25px;
+            }
+        }
+
+        div:nth-child(12) {
+            display: block;
+            width: 100%;
+
+            input {
+                width: 171.800px;
+            }
+        }
+
+        div:last-child {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+
+    }
+}
